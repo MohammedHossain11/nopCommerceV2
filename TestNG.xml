@@ -9,10 +9,8 @@
 <listener class-name="com.nopcommerce.utilities.Reporting"/>
 </listeners>
 
-
-
   <test  name="Test1">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
   
     <classes>
     <class name="com.nopcommerce.testCases.TC_LoginTest_001"/>
@@ -24,7 +22,8 @@
   
   
   
- <!-- <test  name="Test2">
+      
+ <!-- <test  name="Test2">        
   <parameter name="browser" value="ie"/>
   
     <classes>
@@ -41,7 +40,5 @@
            
     </classes>
   </test --> 
-  
-  
-  
+   
 </suite> 

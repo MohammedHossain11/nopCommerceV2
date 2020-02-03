@@ -11,12 +11,13 @@ public class AddcustomerPage {
 	
 	public WebDriver ldriver;
 	
-	public AddcustomerPage(WebDriver rdriver)
+	public AddcustomerPage(WebDriver rdriver)//Constructor- object
 	{
-		ldriver=rdriver;
+		ldriver=rdriver;//driver object
 		PageFactory.initElements(rdriver, this);
 	}
-	By lnkCustomers_menu=By.xpath("//a[@href='#']//span[contains(text(),'Customers')]");//1st customer
+	//identifying object
+	By lnkCustomers_menu=By.xpath("//a[@href='#']//span[contains(text(),'Customers')]");//1st customer(main)
 	By lnkCustomers_menuitem=By.xpath("//span[@class='menu-item-title'][contains(text(),'Customers')]");//2nd customer
 	
 	By btnAddnew=By.xpath("//a[@class='btn bg-blue']"); //Add new
@@ -92,8 +93,8 @@ public class AddcustomerPage {
 			default:
 				listitem=ldriver.findElement(lstitemGuests);
 			}
-						
-			JavascriptExecutor js = (JavascriptExecutor)ldriver;
+			//listitem.click();			
+			JavascriptExecutor js = (JavascriptExecutor)ldriver;//click action not work so use java scripts
 			js.executeScript("arguments[0].click();", listitem);
 			
 	}

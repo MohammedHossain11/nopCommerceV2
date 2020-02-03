@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import com.nopcommerce.pageObjects.AddcustomerPage;
 import com.nopcommerce.pageObjects.LoginPage;
 
-public class TC_AddCustomerTest_003 extends BaseClass 
+public class TC_AddCustomerTest_003 extends BaseClass // for common method
 {
 
 	@Test

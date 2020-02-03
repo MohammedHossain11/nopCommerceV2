@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [nopCommerce]">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
   <listeners>
     <listener class-name="com.nopcommerce.utilities.Reporting"/>
   </listeners>
   <test name="Test1(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.nopcommerce.testCases.TC_AddCustomerTest_003">
         <methods>
@@ -17,7 +17,7 @@
       <class name="com.nopcommerce.testCases.TC_LoginDDT_002">
         <methods>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="1 2 3"/>
+          <include name="loginTest" invocation-numbers="0 1 2 3"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.nopcommerce.testCases.TC_LoginDDT_002 -->
